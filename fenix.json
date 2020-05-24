@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/FenixTemplates/FenixTemplates/master/fenix-schema.json",
+  "author": "ACharLuk",
+  "repoName": "Fenix Docker Templates",
+  "repoUrl": "https://raw.githubusercontent.com/FenixTemplates/Docker/master/README.md",
+  "version": 1.0,
+  "templates": [
+    {
+      "id": "docker-test-image",
+      "displayName": "Docker: Test an image",
+      "language": "Other",
+      "img": "https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png",
+      "description": "Useful Docker templates for different purposes",
+      "category": [
+        "Docker"
+      ],
+      "files": {
+        "download": [
+          {
+            "from": "run_docker.bat",
+            "to": "run_docker.bat"
+          }
+        ]
+      },
+      "command": {
+        "Linux": "./run_docker.bat",
+        "macos": "./run_docker.bat",
+        "windows": ".\\run_docker.bat"
+      },
+      "environment": [
+        {
+          "id": "image_name",
+          "title": "Image name",
+          "description": "Image to create the container",
+          "default": "alpine"
+        },
+        {
+          "id": "container_name",
+          "title": "Container name",
+          "description": "Container will use this for the name and hostname",
+          "default": "fenixDockerContainer"
+        }
+      ]
+    }
+  ]
+}
