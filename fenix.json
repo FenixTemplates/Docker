@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/FenixTemplates/FenixTemplates/master/fenix-schema.json",
   "author": "ACharLuk",
   "repoName": "Fenix Docker Templates",
-  "repoUrl": "https://raw.githubusercontent.com/FenixTemplates/Docker/master/README.md",
+  "repoUrl": "https://raw.githubusercontent.com/FenixTemplates/Docker/master/",
   "version": 1.0,
   "templates": [
     {
