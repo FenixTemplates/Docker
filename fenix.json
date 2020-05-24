@@ -23,8 +23,8 @@
         ]
       },
       "command": {
-        "Linux": "./run_docker.bat",
-        "macos": "./run_docker.bat",
+        "Linux": "chmod +x run_docker.bat && ./run_docker.bat",
+        "macos": "chmod +x run_docker.bat && ./run_docker.bat",
         "windows": ".\\run_docker.bat"
       },
       "environment": [
