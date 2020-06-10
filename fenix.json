@@ -66,6 +66,9 @@
             "from": "express/app.js",
             "to": "app.js"
           }
+        ],
+        "open": [
+          "app.js"
         ]
       },
       "command": {
