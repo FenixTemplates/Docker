@@ -94,8 +94,8 @@
         ]
       },
       "command": {
-        "Linux": "chmod +x run_docker_express.bat && ./run_docker_express.bat",
-        "macos": "chmod +x run_docker_express.bat && ./run_docker_express.bat",
+        "Linux": "chmod +x run_docker_express.bat && chmod +x 'entrypoint.sh' && ./run_docker_express.bat",
+        "macos": "chmod +x run_docker_express.bat && chmod +x 'entrypoint.sh' && ./run_docker_express.bat",
         "windows": ".\\run_docker.bat"
       }
     }
