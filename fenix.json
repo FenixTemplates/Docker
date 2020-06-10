@@ -10,7 +10,7 @@
       "displayName": "Docker: Test an image",
       "language": "Other",
       "img": "https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png",
-      "description": "Useful Docker templates for different purposes",
+      "description": "Useful Docker templates for testing purposes, it will be deleted on exit",
       "category": [
         "Docker"
       ],
@@ -41,6 +41,38 @@
           "default": "fenixDockerContainer"
         }
       ]
+    },
+    {
+      "id": "docker-express",
+      "displayName": "Docker: ExpressJS Server",
+      "language": "JavaScript",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+      "description": "Create your own dockerized Express Application in seconds",
+      "category": [
+        "Docker",
+        "Web Development"
+      ],
+      "files": {
+        "download": [
+          {
+            "from": "run_docker_express.bat",
+            "to": "run_docker_express.bat"
+          },
+          {
+            "from": "express/package.json",
+            "to": "package.json"
+          },
+          {
+            "from": "express/app.js",
+            "to": "app.js"
+          }
+        ]
+      },
+      "command": {
+        "Linux": "chmod +x run_docker_express.bat && ./run_docker_express.bat",
+        "macos": "chmod +x run_docker_express.bat && ./run_docker_express.bat",
+        "windows": ".\\run_docker.bat"
+      }
     }
   ]
 }
