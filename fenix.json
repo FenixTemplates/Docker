@@ -52,6 +52,11 @@
         "Docker",
         "Web Development"
       ],
+      "directories": [
+        "public",
+        "views",
+        "views/layouts"
+      ],
       "files": {
         "download": [
           {
@@ -65,10 +70,23 @@
           {
             "from": "express/app.js",
             "to": "app.js"
+          },
+          {
+            "from": "express/views/home.hbs",
+            "to": "views/home.hbs"
+          },
+          {
+            "from": "express/views/layouts/main.hbs",
+            "to": "views/layouts/main.hbs"
+          },
+          {
+            "from": "express/public/style.css",
+            "to": "public/style.css"
           }
         ],
         "open": [
-          "app.js"
+          "app.js",
+          "views/home.hbs"
         ]
       },
       "command": {

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.app {
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.anim {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  animation: logoAnim 3s ease-in-out infinite alternate forwards
+}
+
+.app img {
+  position: absolute;
+  width: 30%;
+  height: 40%;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.app h1 {
+  position: absolute;
+  width: 50%;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .app img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+  }
+}
+@keyframes logoAnim {
+  0% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+}
