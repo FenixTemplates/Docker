@@ -17,7 +17,7 @@
 
 .app img {
   position: absolute;
-  width: 20%;
+  width: auto;
   height: 40%;
   left: 50%;
   top: 40%;
@@ -36,7 +36,10 @@
   .app img {
     position: absolute;
     width: 90%;
-    height: 90%;
+    height: auto;
+  }
+  .app h1 {
+    top: 75%;
   }
 }
 @keyframes logoAnim {
