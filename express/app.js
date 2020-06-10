@@ -1,9 +1,16 @@
 const express = require('express');
-const app = express();
+const exphbs = require('express-handlebars');
 const port = 8080;
 
+const app = express();
+
+app.engine('.hbs', exphbs({ extname: '.hbs' }));
+app.set('view engine', '.hbs');
+
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  res.send(`<h1>Hello World!</h1>`);
+  res.render('home');
 });
 
 app.listen(port, () => {
