@@ -4,4 +4,4 @@ docker run \
 -w "/app" \
 -p 8080:8080 \
 node:lts \
-npm install && npm run start:dev
+/bin/bash -c "/app/entrypoint.sh"

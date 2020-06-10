@@ -64,6 +64,10 @@
             "to": "run_docker_express.bat"
           },
           {
+            "from": "express/entrypoint.sh",
+            "to": "entrypoint.sh"
+          },
+          {
             "from": "express/package.json",
             "to": "package.json"
           },
